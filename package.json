@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sanity/client": "^0.144.0",
+    "@sanity/image-url": "^0.140.15",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-scroll": "^1.7.14",
+    "react-three-fiber": "^3.0.6",
+    "sass": "^1.23.1",
+    "styled-components": "^4.4.0",
+    "three": "^0.109.0"
   },
   "scripts": {
     "start": "react-scripts start",
