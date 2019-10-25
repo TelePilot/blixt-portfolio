@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import styled from 'styled-components'
 
-import React, { useEffect, useRef, useMemo} from 'react'
+import React, { useEffect, useRef, useMemo, Suspense} from 'react'
 
 import { Canvas, useThree, useFrame, extend } from 'react-three-fiber'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
@@ -76,8 +76,11 @@ function Effects() {
   useEffect(() => {
     occlusionComposer.current.setSize(size.width, size.height)
     composer.current.setSize(size.width, size.height)
-    return
-  }, [size])
+   
+    return () => {
+       
+    }
+  }, [size.width, size.height])
   
   
   useFrame(() => {
@@ -86,7 +89,10 @@ function Effects() {
     occlusionComposer.current.render()
     camera.layers.set(DEFAULT_LAYER)
     composer.current.render()
-    return
+ 
+    return () => {
+     
+    }
   }, 1)
 
   return (
@@ -112,6 +118,9 @@ function Effects() {
 function ThreeComponent() {
   return (
     <CanvasContainer>
+        <Suspense fallback={
+            <div></div>
+        }>
       <Canvas shadowMap>
         <ambientLight />
         <pointLight />
@@ -123,6 +132,7 @@ function ThreeComponent() {
         <Effects />
         
       </Canvas>
+      </Suspense>
     </CanvasContainer>
    
   )
