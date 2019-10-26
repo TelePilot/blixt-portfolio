@@ -1,22 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from '../logo/logo.component'
-
+import Deets from '../deets/deets.component'
 const HeaderContainer = styled.div`
-    width: 10%;
-    height: 100px;
+    width: auto;
+    height: auto;
     display:flex;
-    justify-content: flex-end;
-    align-items:center;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-flow: column;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 99;
 `
 
 const Header = () => (
     <HeaderContainer>
         <Logo/>
+        <Deets/>
     </HeaderContainer>
 )
 

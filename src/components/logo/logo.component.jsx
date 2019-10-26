@@ -11,8 +11,8 @@ function urlFor(source) {
 
 const LogoImage = styled.img`
 width: 50px;
-margin: 25px;
-box-shadow: 1px 1px 5px #d6333e, 0 0 25px #b41e28, 0 0 5px #8a0912;`
+margin: 25px 25px 10px 25px;
+`
 
 const Logo = () => {
     const [logo, setLogo] = useState({ 

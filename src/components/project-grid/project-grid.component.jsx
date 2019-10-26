@@ -29,9 +29,11 @@ const GridContainer = styled.div`
     width: 100%;
 
     @media only screen and (max-width: 1000px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-`
+    @media only screen and (max-width: 700px) {
+        grid-template-columns: 1fr ;
+    }`
 
 const ProjectContainer = styled(Link)`
     
@@ -223,7 +225,7 @@ const ProjectTitleContainer = styled.div`
     top: 0;
     left: 0;
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     &:hover {
         opacity: 1;
         background: rgba(0,0,255,0.6)

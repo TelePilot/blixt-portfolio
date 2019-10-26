@@ -16,8 +16,7 @@ const AboutContainer = styled.div`
 `
 
 const AboutHeader = styled.h1`
-    font-size: 128px;
-    font-weight: bold;
+    font-size: 13vw;
     letter-spacing: -5px;
      margin: 0 15px;
 `

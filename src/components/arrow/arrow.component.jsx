@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { animateScroll} from 'react-scroll'
 
 const ArrowPoint = styled.svg`
-    fill: #d6333e;
+    fill: #ff00ff;
     transform: rotate(90deg);
     position: absolute;
     right: 0;
@@ -13,8 +13,8 @@ const ArrowPoint = styled.svg`
     margin: auto;
     padding: 25px;
     cursor: pointer;
-    -webkit-filter: drop-shadow( 1px 1px 5px #d6333e);
-  filter: drop-shadow( 1px 1px 5px #d6333e);
+    -webkit-filter: drop-shadow( 1px 1px 5px #ff00ff);
+  filter: drop-shadow( 1px 1px 5px #ff0ff);
   
     -webkit-animation: ease-in-out 1s infinite bounce;
     animation: ease-in-out 1s infinite bounce;
