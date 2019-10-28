@@ -89,7 +89,7 @@ function Effects() {
     occlusionComposer.current.render()
     camera.layers.set(DEFAULT_LAYER)
     composer.current.render()
- 
+  
     return () => {
      
     }

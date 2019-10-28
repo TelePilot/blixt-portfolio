@@ -20,6 +20,7 @@ const FirstSection = styled.div`
 const SecondSection = styled.div`
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 `
 const Three = styled(ThreeComponent)`
 width: 100vw;

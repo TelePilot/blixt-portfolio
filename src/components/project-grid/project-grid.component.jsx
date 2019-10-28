@@ -271,7 +271,7 @@ const ProjectGrid = () => {
                          </ProjectTitleContainer>
                            
                            
-                            <ProjectImg  alt="project thumbnail" src={urlFor(project.thumbnail).quality(50).url()} />    
+                            <ProjectImg  alt="project thumbnail" src={project.thumbnail} />    
                         
                     </ProjectContainer>
                 ) 
