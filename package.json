@@ -5,6 +5,7 @@
   "dependencies": {
     "@sanity/client": "^0.144.0",
     "@sanity/image-url": "^0.140.15",
+    "clipboard": "^2.0.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
