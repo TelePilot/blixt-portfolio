@@ -9,7 +9,7 @@ const HeaderContainer = styled.div`
     justify-content: flex-start;
     align-items:flex-start;
     flex-flow: column;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 99;

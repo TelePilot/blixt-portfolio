@@ -161,7 +161,7 @@ const ProjectPage = ({ match }) => {
            
              
                <DescContainer>
-               <Thumbnail alt="Thumbnail image for the project" style={{backgroundImage: `url(${urlFor(project.thumbnail).url()})`}} />
+               <Thumbnail alt="Thumbnail image for the project" style={{backgroundImage: `url(${project.thumbnail})`}} />
                <DescTextCont>
                 <Desc>
                         {project.description}

@@ -1,14 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import sanityClient from '../../client'
-import imageUrlBuilder from "@sanity/image-url"
 import { Link } from 'react-router-dom'
 
-
-const builder = imageUrlBuilder(sanityClient)
-function urlFor(source) {
-  return builder.image(source)
-}
 
 const ProjectsContainer = styled.div`
     display: flex;
