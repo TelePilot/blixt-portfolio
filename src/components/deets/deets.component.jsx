@@ -17,7 +17,8 @@ const Deet = styled.a`
 `
 
 const Detail = styled.input`
-  display: none;
+  opacity: 0; 
+  position: absolute;
 `
 
 const CopiedCont = styled.div`
@@ -61,7 +62,7 @@ const Deets = () => {
             {document.getElementById('copy').style.opacity = 1
             window.setTimeout(() => {
               document.getElementById('copy').style.opacity = 0
-            },1500)}} className="email" data-clipboard-target="#foo" href={`mailto:${deets.emailUrl}`}>Email</Deet>
+            },1500)}} className="email" data-clipboard-target={"#foo"} href={`mailto:${deets.emailUrl}`}>Email</Deet>
            <CopiedCont id="copy">
              <Copied>copied to clipboard!</Copied>
            </CopiedCont>
