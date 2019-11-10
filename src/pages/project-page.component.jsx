@@ -46,7 +46,9 @@ const Section = styled.div`
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    
+    @media only screen and (max-width: 1000px) {
+        height: auto;
+     }
     `
 
 const Thumbnail = styled.div`
@@ -57,7 +59,7 @@ const Thumbnail = styled.div`
     background-size: cover; 
     @media only screen and (max-width: 1000px) {
         width: 100%;
-        height: 50%;
+        height: 480px;
      }
    `
 
@@ -80,7 +82,7 @@ const DescContainer2 = styled.div`
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: 1000px) {
-        flex-flow: column;
+       flex-flow: column;
     }
 `
 const DescTextCont = styled.div`
@@ -90,12 +92,12 @@ const DescTextCont = styled.div`
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: 1000px) {
-        width: 100%;
-        height: 50%;
+       width: 100%;
+       height: auto;
+       margin: 50px 0; 
      }
 `
 const Desc = styled.p`
-    
     font-size: 16px;
     line-height: 1.3;
     padding: 0 15%;
