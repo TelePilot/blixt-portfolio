@@ -18,6 +18,7 @@ const Deet = styled.a`
 
 const Detail = styled.input`
   opacity: 0; 
+  top: -15px;
   position: absolute;
 `
 

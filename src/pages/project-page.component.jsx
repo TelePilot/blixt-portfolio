@@ -25,7 +25,7 @@ const HeaderImage = styled.div`
 `
 const Overlay = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     background: rgba(0,0,0,0.6);
     z-index: 0;
